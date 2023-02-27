@@ -9,6 +9,7 @@ body {
     background-image: url(./assets/bg-main-mobile.png);
     background-repeat: no-repeat;
     background-position: right -20rem top -25rem;
+    background-color: #F2F2F2;
 }
 
 
@@ -93,8 +94,6 @@ header {
 }
 
 .container {
-    position: relative;
-    margin: 0 auto;
     height: 102.4rem;
     width: 100%;
 }
@@ -106,7 +105,7 @@ header {
     border-radius: 1.2rem;
     box-sizing: border-box;
     padding: 0 4.7rem 0 4.8rem;
-    position: absolute;
+    position: relative;
     background-image: url(./assets/bg-pattern-2.svg);
     background-size: 28rem 42rem;
     background-repeat: no-repeat;
@@ -122,6 +121,9 @@ header {
 .mobile-img {
     width: 20.9rem;
     height: 43rem;
+    position: absolute;
+    top: -9.8rem;
+    left: 8.1rem;
 }
 
 .premium-card {
@@ -132,6 +134,7 @@ header {
     box-sizing: border-box;
     position: absolute;
     top: 38rem;
+    left: 0;
 }
 
 .card-context {
@@ -209,7 +212,6 @@ header {
         background-image: url(./assets/bg-main-tablet.png);
         background-repeat: no-repeat;
         background-position: top -30rem right -13rem;
-        /* padding: 6.2rem 0 25rem 4rem; */
     }
     .bg-pattern {
         width: 26.6rem;
@@ -221,6 +223,10 @@ header {
     }
     header {
         padding: 6.2rem 20.9rem 25rem 3.9rem;
+        background-image: url(./assets/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        background-size: 26.6rem 40rem;
+        background-position: top -3.2rem right -3rem;
     }
     header>h1 {
         width: 60%;
@@ -234,8 +240,135 @@ header {
         line-height: 2.8rem;
         width: 98%;
     }
-    .container {}
-    .back-card {}
-    .mobile-card {}
-    .premium-card {}
+    .container {
+        box-sizing: border-box;
+        padding-left: 3.3rem;
+        padding-right: 3.9rem;
+    }
+    .back-card {
+        background-position: top -3.1rem left 16.9rem;
+    }
+    .mobile-img {
+        left: 6.4rem;
+        top: -13.8rem;
+    }
+    .premium-card {
+        width: 39.9rem;
+        height: 54.6rem;
+        left: 23.9rem;
+        top: 15rem;
+    }
+    .footer-container {
+        width: 69.6rem;
+        position: absolute;
+        top: 155.53rem;
+        padding-left: 3.3rem;
+        padding-right: 3.9rem;
+        box-sizing: border-box;
+    }
+    .footer-container>p {
+        width: 36.6rem;
+    }
+    .social-icons {
+        justify-content: right;
+        margin-top: -7rem;
+    }
+    br {
+        display: none;
+    }
+}
+
+
+/* Responsive styles for desktop version */
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url(./assets/bg-main-desktop.png);
+        background-repeat: no-repeat;
+        overflow-x: hidden;
+    }
+    header {
+        background-position: top -3.2rem right 0;
+        padding-left: 16.6rem;
+    }
+    .logo-top {
+        padding-bottom: 12.7rem;
+    }
+    header>h1 {
+        font-size: 8.8rem;
+        line-height: 8.8rem;
+        letter-spacing: -0.1rem;
+    }
+    header>p {
+        font-size: 2rem;
+        line-height: 3.4rem;
+        width: 82.5rem;
+    }
+    .container {
+        padding: 0 16.5rem 0 16.5rem;
+    }
+    .mobile-img {
+        left: 10.2rem;
+    }
+    .back-card {
+        background-size: 31.2rem 47rem;
+        background-position: top -4rem left 23.3rem;
+    }
+    .premium-card {
+        width: 44.6rem;
+        height: 62.5rem;
+        left: 47rem;
+        top: 9rem;
+    }
+    .card-context {
+        padding: 5.8rem 5.9rem 4.6rem 5.4rem;
+    }
+    .card-context>h2 {
+        font-size: 4rem;
+        line-height: 5.2rem;
+    }
+    .card-context>p {
+        font-size: 2rem;
+        line-height: 3.4rem;
+    }
+    .card-buttons {
+        padding: 0 5.9rem 0 5.4rem;
+    }
+    .ios-button,
+    .android-button {
+        width: 33.3rem;
+    }
+    .footer-container {
+        width: 111.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16.5rem 0 16.5rem;
+    }
+    .social-icons {
+        margin-top: -1rem;
+        padding-right: 2rem;
+        position: relative;
+        left: 32rem;
+    }
+    .logo-bottom {
+        margin-right: 13rem;
+    }
+    /* Hover Styles */
+    .ios-button:hover {
+        cursor: pointer;
+        background: #66E2DC;
+    }
+    .android-button:hover {
+        cursor: pointer;
+        background: #FFB964;
+    }
+    /* Social icons hover styles */
+    .fb-icon:hover path,
+    .instagram-icon:hover path,
+    .twitter-icon:hover path {
+        cursor: pointer;
+        fill: #FA7453;
+        ;
+    }
 }
