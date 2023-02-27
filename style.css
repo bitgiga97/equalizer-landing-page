@@ -125,7 +125,7 @@ header {
 }
 
 .premium-card {
-    width: 37.5rem;
+    width: 100%;
     height: 54.6rem;
     background: #FA7453;
     border-radius: 1.2rem;
